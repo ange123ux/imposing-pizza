@@ -1,8 +1,7 @@
 ## DELANI STUDIO
 
 ### Description
-In Delani studio, our designers create and implement visual design and workflows, solicit user feedback and work with you to make sure what gets built is what is needed. Our engineers collaborate with your team to write, and improve code on a daily basis, using proven practices such as test-driven development and pair programming.
-Imposing 
+Imposing Pizza is coming as a solution to the health and weath of the customers. The best thing about it is that users are able to choose the type of the pizza they want, the size, as well as the toppings. Also, they are able to see the amount of money they are going to pay right after hitting order now button which is quite interesting.
 10/21st/2020.
 
 ### Author: Ange Uwimana
@@ -18,7 +17,7 @@ I consider myself as someone who is lucky because I grew up in a family where I 
 * signing up to github 
 * start using it
 ## Technologies Used
-I used programing languages to code Delani Studio page such as HTML language, js language and CSS for styling.
+I used programing languages to code Imposing Pizza page such as HTML language, js language and CSS for styling.
 
   ## PROJECTS THAT I DESIGNED
 [Delani Studio Page](https://ange123ux.github.io/delani-studio/)

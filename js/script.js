@@ -4,33 +4,33 @@ function Ipizza(crust, size, toppings = []) {
     this.size = size;
     this.toppings = toppings;
 }
-Ipizza.prototype.Pizza = function () {
+Ipizza.prototype.price = function () {
     var sizeprice;
     var crustprice;
     var toppingsprice = [];
-    var priceTomatoes=300;
+    var priceTomato=300;
     var priceBeef=1000;
     var priceChicken=2000;
 if (this.size=='small'){
-    sizeprice=1000;
+    sizeprice=1;
 }
 else if(this.size=='medium'){
-    sizeprice=2000;
+    sizeprice=2;
 }
-else {
-    sizeprice=3000;
+else{
+    sizeprice=3;
 }
-if (this.crust==crispy){
+if (this.crust=='Crispy'){
     crustprice=1050;
 }
-else if(this.crust==stuffed){
+else if(this.crust=='Stuffed'){
     crustprice=2050;
 }
 else {
     crustprice=3050;
 }
 for (var i = 0; i < this.toppings.length; i++) {
-    if (this.toppings[i] == "tomatoes") {
+    if (this.toppings[i] == "tomato") {
         toppingsprice.push(priceTomatoes);
     }
 }
@@ -51,12 +51,30 @@ while (i < toppingsprice.length) {
     i++;
 }
 
-var priceTotal = pricesize + pricecrust + totalToppings;
+var priceTotal = sizeprice * (crustprice + totalToppings);
 return priceTotal;
+
 }
-$("#amount").click(function(){
-    var pizzaSize= $('#').val();
-  });
+$("#amount").click(function(event){
+    event.preventDefault();
+    var pizzasize= $("input[name='type']:checked").val();
+    var pizzacrust= $(".types").val();
+    var pizzatoppings=[];
+    $('div.toppings:checkbox:checked').each(function(i){
+        pizzatoppings[i]=$(this).val();  
+    });
+    var pizza=new Ipizza(pizzacrust, pizzasize);
+    pizza.toppings.push(pizzatoppings);
+    console.log(pizza.toppings);
+    var price;
+    price=pizza.price();
+    alert(price);
+});
+var price;
+    
+
+
+  
 
 
 
