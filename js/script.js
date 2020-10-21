@@ -1,5 +1,6 @@
 
-function Ipizza(crust, size, toppings = []) {
+function Ipizza(number,crust, size, toppings = []) {
+    this.number = number;
     this.crust = crust;
     this.size = size;
     this.toppings = toppings;
@@ -51,7 +52,7 @@ while (i < toppingsprice.length) {
     i++;
 }
 
-var priceTotal = sizeprice * (crustprice + totalToppings);
+var priceTotal = sizeprice * (crustprice + totalToppings) * this.number;
 return priceTotal;
 
 }
@@ -59,18 +60,30 @@ $("#amount").click(function(event){
     event.preventDefault();
     var pizzasize= $("input[name='type']:checked").val();
     var pizzacrust= $(".types").val();
+    var pizzanumber=$(".numb").val();
     var pizzatoppings=[];
     $('.topping :checkbox:checked').each(function(i){
         pizzatoppings[i]=$(this).val();  
     });
-    var pizza=new Ipizza(pizzacrust, pizzasize);
+    var pizza=new Ipizza(pizzanumber, pizzacrust, pizzasize);
     Array.prototype.push.apply(pizza.toppings, pizzatoppings);
-$("ul#range").append("<li>"+pizza.number + " " + order.size + " " + order.crust + " " + pizzas + " "+order.price+"$</li>")
     var price, totalPrice=0;
     price=pizza.price();
-    totalPrice +=price[i];
-
+    totalPrice +=price;
+    $("ul#range").append("<li>"+pizza.number + " " + pizza.size + " " + pizza.crust + " " + " "+price+"$</li>")
+    $("#total").text("total:" + totalPrice);
 });
+$("#order-now").click(function(event){
+    event.preventDefault();
+    if($("#deliver").is(":checked")){
+    alert("thanks for ordering. your pizza(s) will be delivered")
+    }else{
+      alert("thanks for ordering")
+    }
+  });
+  function reload(){
+    location.reload();
+  }
 
     
 
