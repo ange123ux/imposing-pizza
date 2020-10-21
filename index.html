@@ -7,6 +7,7 @@
     <title>Imposing Pizza</title>
     <link href="../bootstrap-4.3.1-dist/css/bootstrap.css" rel="stylesheet" type="text/index.css">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 
@@ -84,11 +85,17 @@
         </div>
     </fieldset>
 
-    <input type="submit" value="Amount" style="background-color:blue; color:white;width:100px; border:none;" id="amount"><br><br>
+    <input type="submit" value="Amount" style="background-color:blue; color:white;width:100px; border:none;"
+        id="amount"><br><br>
     <div class="br">
         <p id="total" style="margin-left: 300px;"></p>
         <p id="display" style="margin-left:300px;"></p>
     </div>
+
+    <ul id="range">
+
+    </ul>
+    <p><span id="total"></span></p>
     <div class="form-check">
         <input class="form-check-input" type="checkbox" value="" id="deliver">
         <label class="form-check-label" for="deliver">

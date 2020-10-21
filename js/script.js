@@ -8,7 +8,7 @@ Ipizza.prototype.price = function () {
     var sizeprice;
     var crustprice;
     var toppingsprice = [];
-    var priceTomato=300;
+    var priceTomatoes=300;
     var priceBeef=1000;
     var priceChicken=2000;
 if (this.size=='small'){
@@ -60,17 +60,18 @@ $("#amount").click(function(event){
     var pizzasize= $("input[name='type']:checked").val();
     var pizzacrust= $(".types").val();
     var pizzatoppings=[];
-    $('div.toppings:checkbox:checked').each(function(i){
+    $('.topping :checkbox:checked').each(function(i){
         pizzatoppings[i]=$(this).val();  
     });
     var pizza=new Ipizza(pizzacrust, pizzasize);
-    pizza.toppings.push(pizzatoppings);
-    console.log(pizza.toppings);
-    var price;
+    Array.prototype.push.apply(pizza.toppings, pizzatoppings);
+$("ul#range").append("<li>"+pizza.number + " " + order.size + " " + order.crust + " " + pizzas + " "+order.price+"$</li>")
+    var price, totalPrice=0;
     price=pizza.price();
-    alert(price);
+    totalPrice +=price[i];
+
 });
-var price;
+
     
 
 
