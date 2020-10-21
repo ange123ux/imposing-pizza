@@ -51,6 +51,6 @@ while (i < toppingsprice.length) {
     i++;
 }
 
-var priceTotal = sizeprice + crustprice + totalToppings;
+var priceTotal = pricesize + pricecrust + totalToppings;
 return priceTotal;
 }

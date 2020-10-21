@@ -24,7 +24,7 @@
         <input type="text" id="phone" name="phonenumber" placeholder="Your phone number...">
     </div>
     <div id="type">
-        <h3>Type of pizza</h3>
+        <h3 id="cru">Type of pizza</h3>
         <select class="types">
             <option>Crispy</option>
             <option>Stuffed</option>
@@ -55,7 +55,7 @@
     </div>
 
     <div class="number">
-        <h3>Number of pizza</h3>
+        <h3 id="num">Number of pizza</h3>
         <select class="numb">
             <option selected>Choose...</option>
             <option>1</option>
@@ -84,6 +84,11 @@
         </div>
     </fieldset>
 
+    <input type="submit" value="Amount" style="background-color:blue; color:white;width:100px; border:none;"><br><br>
+    <div class="br">
+        <p id="total" style="margin-left: 300px;"></p>
+        <p id="display" style="margin-left:300px;"></p>
+    </div>
     <div class="form-check">
         <input class="form-check-input" type="checkbox" value="" id="deliver">
         <label class="form-check-label" for="deliver">
@@ -94,18 +99,15 @@
             <label class="form-check-label" for="deliver">
                 $5 for delivery
             </label>
-            <div class="form-check">
+            <div class="addre">
                 <input type="text" class="form-control mb-2 mr-sm-2" id="address" placeholder="Enter street address..">
             </div>
         </div>
     </div>
     <div class="order">
         <button type="reset" class="btn btn-primary">Clear</button>
-        <button type="submit" class="btn btn-primary">Order Now</button>
+        <button type="order" class="btn btn-primary">Order Now</button>
     </div>
-
-
-
 
 
 
