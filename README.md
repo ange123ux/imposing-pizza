@@ -1,4 +1,4 @@
-## DELANI STUDIO
+## IMPOSING PIZZA
 
 ### Description
 Imposing Pizza is coming as a solution to the health and weath of the customers. The best thing about it is that users are able to choose the type of the pizza they want, the size, as well as the toppings. Also, they are able to see the amount of money they are going to pay right after hitting order now button which is quite interesting.
@@ -7,7 +7,7 @@ Imposing Pizza is coming as a solution to the health and weath of the customers.
 ### Author: Ange Uwimana
 
 ## About me
-[[ange123ux](https://github.com/ange123ux/delani-studio.git)]
+[[ange123ux](https://github.com/ange123ux/imposing-pizza)]
 I consider myself as someone who is lucky because I grew up in a family where I am the first person to take programming classes. Currently, I am a student in Southern New Hampshire University and I am doing Communications in Business. Having a Software Developer degree will be an added advantage to my career, and I can't wait to make that big step in my life. 
 
 ## Setup/Installation Requirements
@@ -20,7 +20,7 @@ I consider myself as someone who is lucky because I grew up in a family where I 
 I used programing languages to code Imposing Pizza page such as HTML language, js language and CSS for styling.
 
   ## PROJECTS THAT I DESIGNED
-[Delani Studio Page](https://ange123ux.github.io/delani-studio/)
+[Imposing Pizza](https://ange123ux.github.io/imposing-pizza/)
 
 MIT License
 Permission is hereby granted, free of charge, to any person obtaining a copy
