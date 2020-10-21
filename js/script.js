@@ -8,8 +8,8 @@ Ipizza.prototype.Pizza = function () {
     var sizeprice;
     var crustprice;
     var toppingsprice = [];
-    var priceTomatoes=1500;
-    var priceBeef=1700;
+    var priceTomatoes=300;
+    var priceBeef=1000;
     var priceChicken=2000;
 if (this.size=='small'){
     sizeprice=1000;
@@ -54,3 +54,11 @@ while (i < toppingsprice.length) {
 var priceTotal = pricesize + pricecrust + totalToppings;
 return priceTotal;
 }
+$("#amount").click(function(){
+    var pizzaSize= $('#').val();
+  });
+
+
+
+
+
