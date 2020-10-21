@@ -1,0 +1,64 @@
+body{
+    background-color: rgba(255, 255, 0, 0.432);
+    }
+h1{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 15px;
+    }
+p{
+    text-align: center;
+    }
+.image{
+    float: right;
+    }
+.image > img{
+    padding-right: 300px;
+    padding-top: 50px;
+    height: 300px;
+    }
+#olive{
+    padding-right: 15px;
+    }
+.topping{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-left: 150px;
+    text-indent: 0.1em; 
+    }
+h4{
+    padding-left: 330px;
+    }
+.number{
+    padding-left: 15px;
+    padding-top: 20px;
+    
+    }
+.form{
+    padding-top: 15px;
+    padding-left: 50px;
+    }
+.check{
+    padding-left: 50px;
+    }
+#type{
+    padding-left: 14px;
+    padding-top: 15px;
+    }
+#information{
+    padding-left: 15px;
+    }
+h2{
+    padding-left: 170px;
+    padding-bottom: 20px;
+    }
+.form-check{
+    padding-left: 300px;
+    padding-top: 15px;
+    }
+.order{
+    padding-left: 400px;
+    padding-bottom: 70px;
+    }
+    
