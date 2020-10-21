@@ -43,6 +43,14 @@ for (var i = 0; i < this.toppings.length; i++) {
     if (this.toppings[i] == "chicken") {
         toppingsprice.push(priceChicken);
     }
-    console.log(toppingsprice);
 }
+var totalToppings = 0;
+var i = 0;
+while (i < toppingsprice.length) {
+    totalToppings += toppingsprice[i];
+    i++;
+}
+
+var priceTotal = sizeprice + crustprice + totalToppings;
+return priceTotal;
 }
